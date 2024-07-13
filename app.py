@@ -46,7 +46,7 @@ def show_playlist(playlist_id):
     """Show detail on specific playlist."""
     playlist = Playlist.query.get_or_404(playlist_id)
     songs = playlist.songs
-    return render_template('playlist.html', playlist=playlist songs=songs)
+    return render_template('playlist.html', playlist=playlist, songs=songs)
     
 
 
