@@ -8,7 +8,9 @@
 </div>
 
 <ul>
-  
+  {% for playlist in playlists %}
+  <li>{{ playlist.name }} {{ playlist.description }}</li>
+  {% endfor %}
 </ul>
 
 {% endblock %}
